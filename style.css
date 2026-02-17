@@ -1,7 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Aldrich", sans-serif !important;
+  overflow-x: hidden;
+}
+
+.main-section {
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+
+.box-1,
+.box-2 {
+  overflow-y: auto;
+  min-height: auto;
 }
 
 /* #output-box {
@@ -153,4 +169,279 @@ body {
 .caret-right {
   color: #222222ff;
   font-size: 1.8rem !important;
+}
+
+#slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+#slider-value {
+  min-width: 45px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ========== TABLET & MEDIUM SCREENS (768px - 1199px) ========== */
+@media (max-width: 1199px) {
+  #profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  #btn-link-1,
+  #btn-link-2,
+  #btn-link-3 {
+    padding: 8px 60px;
+    font-size: 0.9rem;
+  }
+
+  #text-1 {
+    font-size: 1rem;
+  }
+
+  #text-2 {
+    font-size: 2rem;
+  }
+
+  #social-box a {
+    font-size: 1.5rem;
+  }
+
+  .caret-left,
+  .caret-right {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* ========== MOBILE SCREENS (576px - 767px) ========== */
+@media (max-width: 767px) {
+  .container-xl {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+
+  input[type="text"],
+  input[type="file"],
+  input[type="number"],
+  input[type="range"] {
+    font-size: 1rem;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+
+  #profile-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #main-text {
+    font-size: 1.5rem !important;
+    word-break: break-word;
+  }
+
+  #btn-link-1,
+  #btn-link-2,
+  #btn-link-3 {
+    padding: 8px 30px;
+    font-size: 0.85rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #other-btn-link-1,
+  #other-btn-link-2,
+  #other-btn-link-3 {
+    width: 100%;
+    font-size: 0.85rem;
+    padding: 10px 10px !important;
+  }
+
+  #call-img {
+    width: 50%;
+    max-width: 150px;
+  }
+
+  #click-btn {
+    padding: 8px 20px !important;
+    font-size: 0.9rem;
+  }
+
+  #profile-box {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #texts-box {
+    width: 100%;
+    order: 2;
+  }
+
+  #img-box {
+    width: 100%;
+    order: 1;
+  }
+
+  #profile-img-2 {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+  }
+
+  #text-1 {
+    font-size: 0.9rem;
+  }
+
+  #text-2 {
+    font-size: 1.5rem;
+  }
+
+  #social-box {
+    flex-wrap: wrap;
+    gap: 12px !important;
+  }
+
+  #social-box a {
+    font-size: 1.3rem;
+  }
+
+  .caret-left,
+  .caret-right {
+    font-size: 1.1rem !important;
+  }
+
+  #contact-box {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+
+  .border-2 {
+    padding: 15px 10px !important;
+  }
+
+  #box {
+    padding: 10px !important;
+  }
+}
+
+/* ========== EXTRA SMALL SCREENS (< 576px) ========== */
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+  }
+
+  .main-section {
+    flex-direction: column;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  .container-fluid {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container-xl,
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .fs-5 {
+    font-size: 0.95rem !important;
+  }
+
+  input[type="text"],
+  input[type="file"],
+  input[type="number"],
+  input[type="range"] {
+    font-size: 14px;
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  #profile-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #main-text {
+    font-size: 1.3rem !important;
+  }
+
+  #btn-link-1,
+  #btn-link-2,
+  #btn-link-3 {
+    padding: 6px 20px;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  #other-btn-link-1,
+  #other-btn-link-2,
+  #other-btn-link-3 {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 8px 8px !important;
+  }
+
+  #call-img {
+    width: 60%;
+    max-width: 120px;
+  }
+
+  #click-btn {
+    padding: 6px 16px !important;
+    font-size: 0.8rem;
+  }
+
+  #text-1 {
+    font-size: 0.85rem;
+  }
+
+  #text-2 {
+    font-size: 1.3rem;
+  }
+
+  #social-box {
+    gap: 8px !important;
+  }
+
+  #social-box a {
+    font-size: 1.1rem;
+  }
+
+  .caret-left,
+  .caret-right {
+    font-size: 0.9rem !important;
+  }
+
+  #follow-text p {
+    font-size: 0.9rem !important;
+  }
+
+  .border-2 {
+    padding: 12px 8px !important;
+  }
+
+  #box {
+    padding: 8px !important;
+    gap: 10px !important;
+  }
+
+  .mt-4 {
+    margin-top: 1rem !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem !important;
+  }
 }
