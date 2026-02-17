@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theam Editor</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- MAIN-SECTION -->
+    <section class="d-flex main-section">
+      <!-- MAIN-CONTAINER -->
+      <div class="container-fluid w-100">
+        <!-- MAIN-ROW -->
+        <div class="row">
+          <!-- COLUMN-1-EDITOR -->
+          <div class="col-6 h-auto box-1">
+            <div
+              class="container-xl d-flex flex-column justify-content-center mt-4 mb-4"
+            >
+              <label class="fs-5" for="range">Width Slider</label>
+              <input type="range" min="0" max="100" value="0" id="slider" />
+              <label class="mt-3 fs-5" for="range">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                maxlength="20"
+                id="username"
+              />
+              <label class="mt-3 fs-5" for="file">Profile Image</label>
+              <input type="file" id="fileInput" accept="image/*" />
+
+              <!-- Main buttons Links -->
+              <label class="mt-3 fs-5" for="text">Button 1 Name & Link</label>
+              <input
+                type="text"
+                id="change-btn-1-name"
+                name="change-btn-1-name"
+                placeholder="Enter your button name (Button name should be in Two Words)"
+                maxlength="20"
+              />
+              <input
+                type="text"
+                id="btn-link"
+                name="btn-link"
+                placeholder="Enter your link"
+                maxlength="20"
+              />
+              <label class="mt-3 fs-5" for="text">Button 2 Name & Link</label>
+              <input
+                type="text"
+                id="change-btn-2-name"
+                name="change-btn-2-name"
+                placeholder="Enter your button name (Button name should be in Two Words)"
+                maxlength="20"
+              />
+              <input
+                type="text"
+                id="btn-2-link"
+                name="btn-2-link"
+                placeholder="Enter your link"
+                maxlength="20"
+              />
+              <label class="mt-3 fs-5" for="text">Button 3 Name & Link</label>
+              <input
+                type="text"
+                id="change-btn-3-name"
+                name="change-btn-3-name"
+                placeholder="Enter your button name (Button name should be in Two Words)"
+                maxlength="20"
+              />
+              <input
+                type="text"
+                id="btn-3-link"
+                name="btn-3-link"
+                placeholder="Enter your link"
+                maxlength="20"
+              />
+              <!-- Main buttons Links end -->
+              <label class="mt-3 fs-5" for="number">Button's Numbers</label>
+              <input
+                type="number"
+                name="btn-number"
+                id="btn-number"
+                placeholder="Enter number of buttons (1-3) (No Numbber mean no BUTTON or add 0)"
+                min="0"
+                max="3"
+              />
+
+              <!-- Other Buttons Links -->
+              <label class="mt-3 fs-5" for="text" id="other-btn-label"
+                >Other Buttons</label
+              >
+              <input
+                type="text"
+                id="other-change-btn-1"
+                name="other-change-btn-1"
+                placeholder="Enter your button name (Button name should be in Two Words)"
+                maxlength="20"
+              /><input
+                type="text"
+                id="other-link-1"
+                name="other-link-1"
+                placeholder="Enter your link"
+                maxlength="20"
+              />
+              <input
+                type="text"
+                id="other-change-btn-2"
+                name="other-change-btn-2"
+                placeholder="Enter your button name (Button name should be in Two Words)"
+                maxlength="20"
+              />
+              <input
+                type="text"
+                id="other-link-2"
+                name="other-link-2"
+                placeholder="Enter your link"
+                maxlength="20"
+              />
+              <input
+                type="text"
+                id="other-change-btn-3"
+                name="other-change-btn-3"
+                placeholder="Enter your button name (Button name should be in Two Words)"
+                maxlength="20"
+              />
+              <input
+                type="text"
+                id="other-link-3"
+                name="other+-link-3"
+                placeholder="Enter your link"
+                maxlength="20"
+              />
+              <!-- Other Buttons Links end -->
+              <label class="mt-3 fs-5" for="text">Your Quote</label>
+              <input
+                type="text"
+                name="text"
+                id="text-input"
+                placeholder="Enter your quote here..."
+                maxlength="100"
+              />
+              <label class="mt-3 fs-5" for="text">Second Text</label>
+              <input
+                type="text"
+                name="text-2"
+                id="text-input-2"
+                placeholder="Enter your second text here..."
+                maxlength="100"
+              />
+              <label class="mt-3 fs-5" for="file">Profile Image</label>
+              <input type="file" id="fileInput-profile" accept="image/*" />
+              <label class="mt-3 fs-5" for="text">Your Instagram Link</label>
+              <input
+                type="text"
+                id="profile-link-1"
+                name="profile-link-1"
+                placeholder="Enter your profile link"
+                maxlength="20"
+              />
+              <label class="mt-3 fs-5" for="text">Your GitHub Link</label>
+              <input
+                type="text"
+                id="profile-link-2"
+                name="profile-link-2"
+                placeholder="Enter your profile link"
+                maxlength="20"
+              />
+              <label class="mt-3 fs-5" for="text">Your X (Twitter) Link</label>
+              <input
+                type="text"
+                id="profile-link-3"
+                name="profile-link-3"
+                placeholder="Enter your profile link"
+                maxlength="20"
+              />
+              <label class="mt-3 fs-5" for="text">Your YouTube Link</label>
+              <input
+                type="text"
+                id="profile-link-4"
+                name="profile-link-4"
+                placeholder="Enter your profile link"
+                maxlength="20"
+              />
+              <label class="mt-3 fs-5" for="text">Your Pinterest Link</label>
+              <input
+                type="text"
+                id="profile-link-5"
+                name="profile-link-5"
+                placeholder="Enter your profile link"
+                maxlength="20"
+              />
+            </div>
+          </div>
+          <!-- COLUMN-1-EDITOR-END -->
+
+          <!-- COLUMN-2-OUTPUT -->
+          <div
+            class="col-6 h-auto box-2"
+            style="background-color: #f5e7c6ff"
+            id="output-box"
+          >
+            <div
+              class="container-xl border border-2 border-secondary mt-4 mb-4 d-flex justify-content-center align-items-center flex-column gap-2 pt-2"
+              id="box"
+            >
+              <div id="profile-img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Profile-img"
+                  id="profile-img"
+                />
+              </div>
+              <h1 class="text-center" id="main-text">Theam Editor</h1>
+              <a href="https://www.google.com" id="btn-link-1">MY PORTFOLIO</a>
+              <a href="https://www.google.com" id="btn-link-2">MY PORTFOLIO</a>
+              <a href="https://www.google.com" id="btn-link-3">MY PORTFOLIO</a>
+
+              <div
+                class="container d-flex justify-content-center align-items-center flex-row gap-4 mt-4"
+                id="contact-box"
+              >
+                <img src="call.png" alt="call-img" id="call-img" />
+                <div
+                  class="container d-flex justify-content-center align-items-center flex-column p-0"
+                >
+                  <h1>Contact Me</h1>
+                  <p class="text-center">
+                    Join the mailing list for exclusive Creation tips. insights.
+                    and updates to help you grow and succeed.
+                  </p>
+                  <a
+                    class="btn btn-dark px-4"
+                    href="https://forms.cloud.microsoft/r/Krf32AqniX"
+                    id="click-btn"
+                    >Click Here</a
+                  >
+                </div>
+              </div>
+              <div
+                class="container d-flex justify-content-center align-items-center flex-column gap-2 mt-4"
+              >
+                <a class="text-center" href="#" id="other-btn-link-1"
+                  >MY PROJECTS</a
+                >
+                <a class="text-center" href="#" id="other-btn-link-2"
+                  >MY ACADEMIC INFO</a
+                >
+                <a class="text-center" href="#" id="other-btn-link-3"
+                  >MY CERTIFICATIONS</a
+                >
+              </div>
+
+              <div
+                class="container d-flex justify-content-between align-items-center flex-row mt-4 p-0"
+                id="profile-box"
+              >
+                <div
+                  class="d-flex flex-column align-items-center text-center w-100"
+                  id="texts-box"
+                >
+                  <p id="text-1">
+                    "Technology is Teaching Us To Be Human Again."
+                  </p>
+                  <h1 id="text-2">IT'S ME.</h1>
+                </div>
+                <div id="img-box">
+                  <img
+                    src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Profile-img"
+                    id="profile-img-2"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="container d-flex justify-content-center align-items-center flex-column mt-4"
+              >
+                <div id="follow-text">
+                  <p class="text-center fs-5 fw-medium">FOLLOW US ON SOCIALS</p>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center flex-row gap-4"
+                  id="social-box"
+                >
+                  <i class="fa-solid fa-caret-right caret-right"></i>
+                  <a href="#" id="social-link-1"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                  <a href="#" id="social-link-2"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="#" id="social-link-3"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                  <a href="#" id="social-link-4"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                  <a href="#" id="social-link-5"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></a>
+                  <i class="fa-solid fa-caret-left caret-left"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- COLUMN-2-OUTPUT-END -->
+        </div>
+        <!-- MAIN-ROW-END -->
+      </div>
+      <!-- MAIN-CONTAINER-END -->
+    </section>
+    <!-- MAIN-SECTION-END -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/db271edc56.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
