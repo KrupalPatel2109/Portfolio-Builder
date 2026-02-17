@@ -1,4 +1,5 @@
 let slider = document.getElementById("slider");
+let sliderValue = document.getElementById("slider-value");
 let box = document.getElementById("box");
 let username = document.getElementById("username");
 let mainText = document.getElementById("main-text");
@@ -46,6 +47,7 @@ slider.addEventListener("input", function () {
   let value = slider.value;
   box.style.width = value + "%";
   box.style.height = value + "auto";
+  sliderValue.textContent = value + "%";
 });
 
 username.addEventListener("input", function () {
